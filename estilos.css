@@ -1,9 +1,10 @@
 body {
   font-family: Barlow, sans-serif;
+  --preto: #000;
+  --branco: #fff;
   --bege: #E6E0D6;
   --marrom-escuro: #816D4F;
   --marrom-claro: #B29463;
-  height: 4000px;
 }
 
 input[type=checkbox]:checked,
@@ -39,3 +40,25 @@ input[type=checkbox]:focus{
   --bs-bg-opacity: .2;
 }
 
+.botao-padrao {
+  background-color: var(--marrom-claro);
+  color: var(--preto);
+}
+
+.bg-marrom{
+  background-color: var(--marrom-claro);
+}
+
+.input-range::-webkit-slider-thumb {
+  background-color: var(--marrom-claro);
+}
+
+[data-bs-theme="dark"]{
+  color: var(--branco);
+  .nav-link, .card-body, .offcanvas, .accordion, .btn{
+    --bs-nav-link-color: var(--branco);
+    --bs-card-color: var(--branco);
+    --bs-offcanvas-color: var(--branco);
+    --bs-body-color: var(--branco);
+  }
+}
